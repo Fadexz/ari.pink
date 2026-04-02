@@ -3,11 +3,15 @@
 <head>
     <title>ari.pink</title>
     <style>
-        html {
-            display: table;
-            margin: auto;
+        html, body {
             height: 100%;
+            margin: 0;
             font-family: monospace;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .bg-video {
             position: fixed;
@@ -37,12 +41,6 @@
             -webkit-font-smoothing: antialiased;
             margin: 0;
         }
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            height: 100%;
-            background-color: transparent;
-        }
         button, input {
             background-color: rgba(255,255,255,.7);
             border: none;
@@ -54,7 +52,9 @@
         <source src="https://i.imgur.com/yIzD29j.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
     <div class="bg-blur"></div>
+
     <h1 class="main-text">Ari's Lips</h1>
 </body>
 </html>
