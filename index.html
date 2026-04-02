@@ -4,6 +4,19 @@
     <title>ari.pink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <style>
+        :root {
+            --blur: 12px;
+        }
+        @media (min-resolution: 2dppx) {
+            :root {
+                --blur: 8px;
+            }
+        }
+        @media (min-resolution: 3dppx) {
+            :root {
+                --blur: 6px;
+            }
+        }
         html, body {
             height: 100%;
             margin: 0;
@@ -46,7 +59,7 @@
             left: -15%;
             width: 130%;
             height: 130%;
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(var(--blur));
             background-color: rgba(190, 184, 191, 0.75);
         }
         .main-text {
