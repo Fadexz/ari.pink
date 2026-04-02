@@ -70,6 +70,11 @@
             margin: 0;
             text-align: center;
         }
+        @media (orientation: landscape) and (max-width: 900px) {
+            .main-text {
+                font-size: clamp(24px, 6vw, 48px);
+            }
+        }
         button, input {
             background-color: rgba(255, 255, 255, .7);
             border: none;
