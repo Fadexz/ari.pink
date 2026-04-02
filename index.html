@@ -55,12 +55,13 @@
         .bg-blur::before {
             content: "";
             position: absolute;
-            top: -15%;
-            left: -15%;
-            width: 130%;
-            height: 130%;
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
             backdrop-filter: blur(var(--blur));
             background-color: rgba(190, 184, 191, 0.55);
+            transform: translateZ(0);
         }
         .main-text {
             font-size: clamp(36px, 10vw, 64px);
